@@ -6,7 +6,8 @@
             [ring.middleware.resource :refer [wrap-resource]]
             [ring.middleware.json :refer [wrap-json-body wrap-json-response]]
             [ring.middleware.defaults :refer :all]
-            [prone.middleware :as prone]))
+            [prone.middleware :as prone])
+  (:gen-class))
 
 (defroutes site-routes
   (GET "/" [] "new app")
